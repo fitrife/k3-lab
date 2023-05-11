@@ -6,6 +6,16 @@
   --shadow: 0 0 10px hsl(151, 40%, 90%);
   --border-color-1: hsl(0, 0%, 90%);
   --white: hsl(0, 0%, 100%);
+  --white-color: #ffffff;
+  --primary-color: #f8cb2e;
+  --secondary-color: #ee5007;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #ee5007;
+  --custom-btn-bg-hover-color: #c01f27;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #b22727;
 }
 
 /* Text */
@@ -18,7 +28,7 @@
 
 /* Margin */
 .ms-n5 {
-  margin-left: -3rem !important;
+  margin-left: -1.9rem !important;
 }
 
 /* Background */
@@ -508,6 +518,64 @@ textarea.form-control {
   justify-content: center;
 }
 
+/*---------------------------------------
+  PRICING              
+-----------------------------------------*/
+.pricing-thumb {
+  border: 5px dotted var(--dark-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  padding: 50px;
+}
+
+.pricing-thumb h3 small {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.pricing-list {
+  column-count: 2;
+  padding-left: 20px;
+}
+
+.pricing-list-item {
+  line-height: normal;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.pricing-tag {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.pricing-tag span {
+  font-size: 180%;
+  line-height: normal;
+}
+
+.pricing-thumb .link-fx-1 {
+  color: var(--primary-color);
+}
+
+.pricing-thumb .link-fx-1:hover {
+  color: var(--link-hover-color);
+}
+
 /*** Service ***/
 .service-item {
   position: relative;
@@ -531,6 +599,84 @@ textarea.form-control {
   background-color: #fff;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+
+.feature-item {
+  flex-basis: 33.33%;
+  margin: 0px 10px;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+
+.feature-item .feature-icon {
+  width: 125px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+}
+
+.feature-item .feature-icon i {
+  font-size: 65px;
+  color: var(--primary);
+}
+
+.feature-item h4 {
+  color: #223a66;
+}
+
+.feature-item p {
+  font-size: 14px;
+}
+
+.feature-item span.price-round {
+  background: var(--primary);
+  color: var(--light);
+  border-radius: 75px;
+}
+
+.feature-section.border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.w-hours li {
+  padding: 6px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.counter-stat {
+  text-align: center;
+  padding: 55px 0px 40px 0px;
+  position: relative;
+}
+
+.counter-stat i {
+  display: block;
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 70px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  -webkit-transform: translateY(25px);
+  transform: translateY(25px);
+}
+
+.counter-stat span {
+  font-size: 70px;
+  color: #fff;
+}
+
+.counter-stat p {
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mb--80 {
+  margin-bottom: -80px;
 }
 
 .service-item .service-icon img {
@@ -618,16 +764,27 @@ textarea.form-control {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background: var(--primary);
+  color: var(--light);
+  background: var(--primary) !important;
   border-radius: 10px;
   font-size: 22px;
   transition: 0.5s;
 }
 
+.testimonial-carousel .owl-nav .owl-prev i,
+.testimonial-carousel .owl-nav .owl-next i {
+  color: var(--light);
+}
+
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-  background: var(--secondary);
+  background: var(--light) !important;
+  border: 1px solid var(--primary);
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover i,
+.testimonial-carousel .owl-nav .owl-next:hover i {
+  color: var(--primary);
 }
 
 /*** Footer ***/
