@@ -111,8 +111,13 @@
         <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
           <a href="#home" class="nav-item nav-link active">Beranda</a>
           <a href="#about" class="nav-item nav-link">Tentang Kami</a>
+          <a href="#curriculum" class="nav-item nav-link d-none d-md-inline"
+            >Kurikulum
+          </a>
           <a href="#schedule" class="nav-item nav-link">Jadwal</a>
-          <a href="#curriculum" class="nav-item nav-link">Kurikulum </a>
+          <a href="#curriculum" class="nav-item nav-link d-inline d-md-none"
+            >Kurikulum
+          </a>
           <a href="#register" class="nav-item nav-link">Registrasi</a>
         </div>
       </div>
@@ -258,234 +263,243 @@
     </section>
     <!-- About End -->
 
-    <section class="schedule bg-light py-5 order-md-1 order-0" id="schedule">
-      <div class="container">
-        <div class="text-center mx-auto" style="max-width: 500px">
-          <h1 class="display-6 fw-bolder mb-5">Harga dan Jadwal</h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="feature-block d-lg-flex justify-content-center">
-              <div class="schedule-item mb-5 mb-lg-0">
-                <div
-                  class="d-flex justify-content-center align-items-center mb-4"
-                >
-                  <div class="schedule-icon bg-primary rounded">
-                    <i class="icofont-graduate-alt text-light"></i>
-                    <!-- <i class="icofont-hat-alt text-light"></i> -->
-                    <!-- <span class="fw-bold text-center">
-                  Training & Sertifikasi Petugas K3 Laboratorium BNSP
-                </span> -->
+    <!-- Schedule and Curriculum -->
+    <div class="row">
+      <section
+        class="col-12 schedule bg-light py-5 order-md-1 order-0"
+        id="schedule"
+      >
+        <div class="container">
+          <div class="text-center mx-auto" style="max-width: 500px">
+            <h1 class="display-6 fw-bolder mb-5">Harga dan Jadwal</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="feature-block d-lg-flex justify-content-center">
+                <div class="schedule-item mb-5 mb-lg-0">
+                  <div
+                    class="d-flex justify-content-center align-items-center mb-4"
+                  >
+                    <div class="schedule-icon bg-primary rounded">
+                      <i class="icofont-graduate-alt text-light"></i>
+                      <!-- <i class="icofont-hat-alt text-light"></i> -->
+                      <!-- <span class="fw-bold text-center">
+                    Training & Sertifikasi Petugas K3 Laboratorium BNSP
+                  </span> -->
+                    </div>
                   </div>
-                </div>
-                <h6 class="mb-3 text-center">
-                  Training & Sertifikasi Petugas K3 Laboratorium BNSP
-                </h6>
-                <!-- <div class="price d-flex justify-content-center">
-                  <span class="price-round p-3 m-auto mb-4">Rp 7.000.000</span>
-                </div> -->
-                <div class="price text-center">
-                  <p class="nodiscount mb-0 text-decoration-line-through">
-                    Rp 7.500.000
+                  <h6 class="mb-3 text-center">
+                    Training & Sertifikasi Petugas K3 Laboratorium BNSP
+                  </h6>
+                  <!-- <div class="price d-flex justify-content-center">
+                    <span class="price-round p-3 m-auto mb-4">Rp 7.000.000</span>
+                  </div> -->
+                  <div class="price text-center">
+                    <p class="nodiscount mb-0 text-decoration-line-through">
+                      Rp 7.500.000
+                    </p>
+                    <p class="discount fs-3 fw-bold text-primary">
+                      Rp 7.000.000
+                    </p>
+                  </div>
+                  <hr style="opacity: 0.07" />
+                  <p>
+                    <span class="text-danger">*</span> Harga diatas adalah harga
+                    publik. Harga bisa lebih murah jika mengirimkan lebih dari 3
+                    peserta
+                    <br />
+                    <span class="text-danger">*</span> Pelaksanaan training
+                    secara offline atau tatap muka
                   </p>
-                  <p class="discount fs-3 fw-bold text-primary">Rp 7.000.000</p>
                 </div>
-                <hr style="opacity: 0.07" />
-                <p>
-                  <span class="text-danger">*</span> Harga diatas adalah harga
-                  publik. Harga bisa lebih murah jika mengirimkan lebih dari 3
-                  peserta
-                  <br />
-                  <span class="text-danger">*</span> Pelaksanaan training secara
-                  offline atau tatap muka
-                </p>
-              </div>
 
-              <div class="schedule-item mb-5 mb-lg-0">
-                <div
-                  class="d-flex justify-content-center align-items-center mb-4"
-                >
-                  <div class="schedule-icon bg-light rounded">
-                    <i class="icofont-calendar text-primary"></i>
+                <div class="schedule-item mb-5 mb-lg-0">
+                  <div
+                    class="d-flex justify-content-center align-items-center mb-4"
+                  >
+                    <div class="schedule-icon bg-light rounded">
+                      <i class="icofont-calendar text-primary"></i>
+                    </div>
+                    <!-- <span class="fw-bold"> Jadwal Training Terdekat </span> -->
                   </div>
-                  <!-- <span class="fw-bold"> Jadwal Training Terdekat </span> -->
+                  <h6 class="mb-3 text-center">Jadwal Training Terdekat</h6>
+                  <ul class="w-hours list-unstyled">
+                    <li class="d-flex justify-content-center">
+                      <span>06 - 08 Juni 2023</span>
+                    </li>
+                    <li class="d-flex justify-content-center">
+                      <span>04 - 06 Juli 2023</span>
+                    </li>
+                    <li class="d-flex justify-content-center">
+                      <span>08 - 10 Agustus 2023</span>
+                    </li>
+                  </ul>
                 </div>
-                <h6 class="mb-3 text-center">Jadwal Training Terdekat</h6>
-                <ul class="w-hours list-unstyled">
-                  <li class="d-flex justify-content-center">
-                    <span>06 - 08 Juni 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facts Start -->
+      <section
+        class="col-12 curriculum overflow-hidden my-5 my-md-0 px-lg-0 order-md-0 order-1"
+        id="curriculum"
+      >
+        <div class="container curriculum-facility px-lg-0 px-4">
+          <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 curriculum-item">
+              <div class="h-100 px-4 ps-lg-0">
+                <h1 class="text-white mb-4">Yang Akan Anda Pelajari</h1>
+                <ul class="text-light mb-5">
+                  <li>The Occupational Health Introduction</li>
+                  <li>
+                    Potential Hazards in Laboratory (ILO – International Hazard
+                    Datasheets on Occupation)
                   </li>
-                  <li class="d-flex justify-content-center">
-                    <span>04 - 06 Juli 2023</span>
+                  <li>COSHH (Control of Substances Hazardous to Health)</li>
+                  <li>MSDS and Labeling</li>
+                  <li>Laboratory Safety Practices.</li>
+                  <li>Ventilation</li>
+                  <li>Personal Protective Equipment</li>
+                  <li>Laboratory Ergonomics</li>
+                  <li>Hazardous Waste and Emergency Procedure</li>
+                  <li>
+                    Laboratory Safety Management System (Laboratory Safety Plan)
                   </li>
-                  <li class="d-flex justify-content-center">
-                    <span>08 - 10 Agustus 2023</span>
+                  <li>
+                    Exposure monitoring, Medical Surveillance and Bio
+                    Monitoring.
                   </li>
+                  <li>Accident Investigation</li>
+                  <li>Basic First Aid</li>
+                  <li>Evakuasi dan Transportasi Korban</li>
+                  <li>Praktek</li>
                 </ul>
+                <a
+                  href="https://docs.google.com/document/d/1f8r1I9saA8x3n6RT--wwa0YxgynaC5_6/edit?usp=sharing&ouid=115180341852688807183&rtpof=true&sd=true"
+                  class="align-self-start btn btn-light py-3 px-5"
+                  target="_blank"
+                >
+                  Download Detail Pelaksanaan Program
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Facts Start -->
-    <section
-      class="curriculum overflow-hidden my-5 my-md-0 px-lg-0 order-md-0 order-1"
-      id="curriculum"
-    >
-      <div class="container curriculum-facility px-lg-0 px-4">
-        <div class="row g-0 mx-lg-0">
-          <div class="col-lg-6 curriculum-item">
-            <div class="h-100 px-4 ps-lg-0">
-              <h1 class="text-white mb-4">Yang Akan Anda Pelajari</h1>
-              <ul class="text-light mb-5">
-                <li>The Occupational Health Introduction</li>
-                <li>
-                  Potential Hazards in Laboratory (ILO – International Hazard
-                  Datasheets on Occupation)
-                </li>
-                <li>COSHH (Control of Substances Hazardous to Health)</li>
-                <li>MSDS and Labeling</li>
-                <li>Laboratory Safety Practices.</li>
-                <li>Ventilation</li>
-                <li>Personal Protective Equipment</li>
-                <li>Laboratory Ergonomics</li>
-                <li>Hazardous Waste and Emergency Procedure</li>
-                <li>
-                  Laboratory Safety Management System (Laboratory Safety Plan)
-                </li>
-                <li>
-                  Exposure monitoring, Medical Surveillance and Bio Monitoring.
-                </li>
-                <li>Accident Investigation</li>
-                <li>Basic First Aid</li>
-                <li>Evakuasi dan Transportasi Korban</li>
-                <li>Praktek</li>
-              </ul>
-              <a
-                href="https://docs.google.com/document/d/1f8r1I9saA8x3n6RT--wwa0YxgynaC5_6/edit?usp=sharing&ouid=115180341852688807183&rtpof=true&sd=true"
-                class="align-self-start btn btn-light py-3 px-5"
-                target="_blank"
-              >
-                Download Detail Pelaksanaan Program
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 facility-item">
-            <div class="h-100 px-4 pe-lg-0">
-              <div class="row g-4 mb-4">
-                <!-- <div class="col-sm-6 pt-4 pb-4">
-                  <div class="d-flex align-items-center">
-                    <i
-                      class="fa-solid fa-file-contract fs-1 me-3 text-dark"
-                    ></i>
-                    <h5 class="mb-0">Sertifikat Internal</h5>
+            <div class="col-lg-6 facility-item">
+              <div class="h-100 px-4 pe-lg-0">
+                <div class="row g-4 mb-4">
+                  <!-- <div class="col-sm-6 pt-4 pb-4">
+                    <div class="d-flex align-items-center">
+                      <i
+                        class="fa-solid fa-file-contract fs-1 me-3 text-dark"
+                      ></i>
+                      <h5 class="mb-0">Sertifikat Internal</h5>
+                    </div>
+                  </div> -->
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 me-3"
+                        src="img/icon/internal.png"
+                        style="width: 65px"
+                        alt=""
+                      />
+                      <h5 class="mb-0 fw-bold">Sertifikat Internal</h5>
+                    </div>
                   </div>
-                </div> -->
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 me-3"
-                      src="img/icon/internal.png"
-                      style="width: 65px"
-                      alt=""
-                    />
-                    <h5 class="mb-0 fw-bold">Sertifikat Internal</h5>
+                  <!-- <div class="col-sm-6 pt-4 pb-4">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-file-shield fs-1 me-3 text-dark"></i>
+                      <h5 class="mb-0">Sertifikat BNSP</h5>
+                    </div>
+                  </div> -->
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 me-3"
+                        src="img/icon/bnsp.png"
+                        style="width: 65px"
+                        alt=""
+                      />
+                      <h5 class="mb-0 fw-bold">Sertifikat BNSP</h5>
+                    </div>
                   </div>
-                </div>
-                <!-- <div class="col-sm-6 pt-4 pb-4">
-                  <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-file-shield fs-1 me-3 text-dark"></i>
-                    <h5 class="mb-0">Sertifikat BNSP</h5>
+                  <!-- <div class="col-sm-6 pt-4 pb-4">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-file-pdf fs-1 me-3 text-dark"></i>
+                      <h5 class="mb-0">e-Modul Training</h5>
+                    </div>
+                  </div> -->
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 me-3"
+                        src="img/icon/ebook.png"
+                        style="width: 65px"
+                        alt=""
+                      />
+                      <h5 class="mb-0 fw-bold">E-Modul Training</h5>
+                    </div>
                   </div>
-                </div> -->
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 me-3"
-                      src="img/icon/bnsp.png"
-                      style="width: 65px"
-                      alt=""
-                    />
-                    <h5 class="mb-0 fw-bold">Sertifikat BNSP</h5>
+                  <!-- <div class="col-sm-6 pt-4 pb-4">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-book fs-1 me-3 text-dark"></i>
+                      <h5 class="mb-0">Training Kit</h5>
+                    </div>
+                  </div> -->
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 me-3"
+                        src="img/icon/training-kit.png"
+                        style="width: 65px"
+                        alt=""
+                      />
+                      <h5 class="mb-0 fw-bold">Training Kit</h5>
+                    </div>
                   </div>
-                </div>
-                <!-- <div class="col-sm-6 pt-4 pb-4">
-                  <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-file-pdf fs-1 me-3 text-dark"></i>
-                    <h5 class="mb-0">e-Modul Training</h5>
+                  <!-- <div class="col-sm-6 pt-4 pb-4">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-coffee fs-1 me-3 text-dark"></i>
+                      <h5 class="mb-0">Coffee Break & Lunch</h5>
+                    </div>
+                  </div> -->
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 me-3"
+                        src="img/icon/lunch.png"
+                        style="width: 65px"
+                        alt=""
+                      />
+                      <h5 class="mb-0 fw-bold">Coffee Break & Lunch</h5>
+                    </div>
                   </div>
-                </div> -->
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 me-3"
-                      src="img/icon/ebook.png"
-                      style="width: 65px"
-                      alt=""
-                    />
-                    <h5 class="mb-0 fw-bold">E-Modul Training</h5>
-                  </div>
-                </div>
-                <!-- <div class="col-sm-6 pt-4 pb-4">
-                  <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-book fs-1 me-3 text-dark"></i>
-                    <h5 class="mb-0">Training Kit</h5>
-                  </div>
-                </div> -->
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 me-3"
-                      src="img/icon/training-kit.png"
-                      style="width: 65px"
-                      alt=""
-                    />
-                    <h5 class="mb-0 fw-bold">Training Kit</h5>
-                  </div>
-                </div>
-                <!-- <div class="col-sm-6 pt-4 pb-4">
-                  <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-coffee fs-1 me-3 text-dark"></i>
-                    <h5 class="mb-0">Coffee Break & Lunch</h5>
-                  </div>
-                </div> -->
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 me-3"
-                      src="img/icon/lunch.png"
-                      style="width: 65px"
-                      alt=""
-                    />
-                    <h5 class="mb-0 fw-bold">Coffee Break & Lunch</h5>
-                  </div>
-                </div>
-                <!-- <div class="col-sm-6 pt-4 pb-4">
-                  <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-building fs-1 me-3 text-dark"></i>
-                    <h5 class="mb-0">Meeting Room</h5>
-                  </div>
-                </div> -->
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 me-3"
-                      src="img/icon/meeting-room.png"
-                      style="width: 65px"
-                      alt=""
-                    />
-                    <h5 class="mb-0 fw-bold">Meeting Room</h5>
+                  <!-- <div class="col-sm-6 pt-4 pb-4">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-building fs-1 me-3 text-dark"></i>
+                      <h5 class="mb-0">Meeting Room</h5>
+                    </div>
+                  </div> -->
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 me-3"
+                        src="img/icon/meeting-room.png"
+                        style="width: 65px"
+                        alt=""
+                      />
+                      <h5 class="mb-0 fw-bold">Meeting Room</h5>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Facts End -->
+      </section>
+      <!-- Facts End -->
+    </div>
 
     <!-- Register Start -->
     <div class="register my-5 my-md-0 py-5" id="register">
