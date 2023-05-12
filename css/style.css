@@ -400,7 +400,7 @@ textarea.form-control {
   }
 }
 
-/*** Header ***/
+/* Header */
 .carousel-caption {
   top: 0;
   left: 0;
@@ -460,138 +460,66 @@ textarea.form-control {
   color: var(--primary);
 }
 
-/*** Facts ***/
+/* Curriculum Facility */
 @media (min-width: 992px) {
-  .container.facts {
+  .curriculum-facility {
     max-width: 100% !important;
   }
 
-  .container.facts .facts-text {
+  .curriculum-facility .curriculum-item {
     padding-left: calc(((100% - 960px) / 2) + 0.75rem);
   }
 
-  .container.facts .facts-counter {
+  .curriculum-facility .facility-item {
     padding-right: calc(((100% - 960px) / 2) + 0.75rem);
   }
 }
 
 @media (min-width: 1200px) {
-  .container.facts .facts-text {
+  .curriculum-facility .curriculum-item {
     padding-left: calc(((100% - 1140px) / 2) + 0.75rem);
   }
 
-  .container.facts .facts-counter {
+  .curriculum-facility .facility-item {
     padding-right: calc(((100% - 1140px) / 2) + 0.75rem);
   }
 }
 
 @media (min-width: 1400px) {
-  .container.facts .facts-text {
+  .curriculum-facility .curriculum-item {
     padding-left: calc(((100% - 1320px) / 2) + 0.75rem);
   }
 
-  .container.facts .facts-counter {
+  .curriculum-facility .facility-item {
     padding-right: calc(((100% - 1320px) / 2) + 0.75rem);
   }
 }
 
-.container.facts .facts-text {
+.curriculum-facility .curriculum-item {
   background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(1, 95, 201, 0.9)),
-    url(../img/carousel-1.jpg) center right no-repeat;
+    url(../img/curriculum.webp) center right no-repeat;
   background-size: cover;
 }
 
-.container.facts .facts-counter {
+.curriculum-facility .facility-item {
   background: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
-    url(../img/carousel-1.jpg) center right no-repeat;
+    url(../img/facility.webp) center right no-repeat;
   background-size: cover;
 }
 
-.container.facts .facts-text .h-100,
-.container.facts .facts-counter .h-100 {
+.curriculum-facility .curriculum-item .h-100,
+.curriculum-facility .facility-item .h-100 {
   padding: 6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/*---------------------------------------
-  PRICING              
------------------------------------------*/
-.pricing-thumb {
-  border: 5px dotted var(--dark-color);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  padding: 50px;
-}
-
-.pricing-thumb h3 small {
-  display: inline-block;
-  font-size: 18px;
-  margin-right: 15px;
-}
-
-.pricing-list {
-  column-count: 2;
-  padding-left: 20px;
-}
-
-.pricing-list-item {
-  line-height: normal;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.pricing-tag {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px;
-}
-
-.pricing-tag span {
-  font-size: 180%;
-  line-height: normal;
-}
-
-.pricing-thumb .link-fx-1 {
-  color: var(--primary-color);
-}
-
-.pricing-thumb .link-fx-1:hover {
-  color: var(--link-hover-color);
-}
-
-/*** Service ***/
-.service-item {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
-}
-
-.service-item .service-icon {
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature-item {
+/* Schedule */
+.schedule-item {
   flex-basis: 33.33%;
   margin: 0px 10px;
   margin-bottom: 0px;
@@ -601,7 +529,7 @@ textarea.form-control {
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
 }
 
-.feature-item {
+.schedule-item {
   flex-basis: 33.33%;
   margin: 0px 10px;
   padding: 40px 30px;
@@ -610,7 +538,7 @@ textarea.form-control {
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
 }
 
-.feature-item .feature-icon {
+.schedule-item .schedule-icon {
   width: 125px;
   height: 90px;
   display: flex;
@@ -619,132 +547,33 @@ textarea.form-control {
   border-radius: 0 10px 10px 0;
 }
 
-.feature-item .feature-icon i {
+.schedule-item .schedule-icon i {
   font-size: 65px;
   color: var(--primary);
 }
 
-.feature-item h4 {
+.schedule-item h4 {
   color: #223a66;
 }
 
-.feature-item p {
+.schedule-item p {
   font-size: 14px;
 }
 
-.feature-item span.price-round {
+.schedule-item span.price-round {
   background: var(--primary);
   color: var(--light);
   border-radius: 75px;
 }
 
-.feature-section.border-top {
-  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
-}
-
-.w-hours li {
-  padding: 6px 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.counter-stat {
-  text-align: center;
-  padding: 55px 0px 40px 0px;
-  position: relative;
-}
-
-.counter-stat i {
-  display: block;
-  color: rgba(255, 255, 255, 0.06);
-  font-size: 70px;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  -webkit-transform: translateY(25px);
-  transform: translateY(25px);
-}
-
-.counter-stat span {
-  font-size: 70px;
-  color: #fff;
-}
-
-.counter-stat p {
-  margin-bottom: 0px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.mb--80 {
-  margin-bottom: -80px;
-}
-
-.service-item .service-icon img {
-  max-width: 60px;
-  max-height: 60px;
-}
-
-.service-item a.btn {
-  color: var(--primary);
-}
-
-.service-item a.btn:hover {
-  color: #ffffff;
-  background: var(--primary);
-  border-color: var(--primary);
-}
-
-/*** Appointment ***/
-.appointment {
+/* Register */
+.register {
   background: linear-gradient(rgb(1, 94, 201), rgba(1, 94, 201, 0.564)),
     url(../img/join-us.webp) center center no-repeat;
   background-size: cover;
 }
 
-/*** Testimonial ***/
-.animated.pulse {
-  animation-duration: 1.5s;
-}
-
-.testimonial-left,
-.testimonial-right {
-  position: relative;
-}
-
-.testimonial-left img,
-.testimonial-right img {
-  position: absolute;
-  padding: 5px;
-  border: 1px dashed var(--primary);
-  border-radius: 10px;
-}
-
-.testimonial-left img:nth-child(1),
-.testimonial-right img:nth-child(3) {
-  width: 70px;
-  height: 70px;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.testimonial-left img:nth-child(2),
-.testimonial-right img:nth-child(2) {
-  width: 60px;
-  height: 60px;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-}
-
-.testimonial-left img:nth-child(3),
-.testimonial-right img:nth-child(1) {
-  width: 50px;
-  height: 50px;
-  bottom: 10%;
-  right: 10%;
-}
-
+/* Testimonial */
 .testimonial-carousel .owl-item img {
   width: 100px;
   height: 100px;
@@ -787,7 +616,7 @@ textarea.form-control {
   color: var(--primary);
 }
 
-/*** Footer ***/
+/* Footer */
 .footer .btn.btn-social {
   margin-right: 5px;
   width: 35px;
@@ -855,7 +684,11 @@ textarea.form-control {
   width: 60%;
 }
 
-/* Responsive */
+@media (max-width: 767px) {
+  footer img {
+    max-height: 75px;
+  }
+}
 @media (max-width: 575px) {
   footer img {
     max-height: 58px;
